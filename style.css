@@ -1,0 +1,147 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45grad, #3EC6F3, #FFFFFF);
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0;
+}
+
+.container {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
+
+.card {
+  background-color: #005BA3;
+  padding: 30px;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+
+.subtle_blue_shadow {
+  box-shadow: 0px 2px 2px #161440;
+}
+
+.solid_blue_shadow {
+  box-shadow: 10px 10px 0px #161440;
+}
+
+.img-avatar {
+  border-radius: 40%;
+  width: 60%;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  background: linear-gradient(0deg, #161440 41%, rgba(255,0,255,0) 10%);
+  letter-spacing: 2px;
+}
+
+.fat_underline {
+  background: -webkit-linear-gradient(45grad, #FBAC18, #FFFFFF, #3EC6F3, #FFFFFF, #FBAC18);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 0%;
+  text-align: left;
+}
+
+p {
+  text-align: justify;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 5px;
+  background-color: #FBAC18;
+  color: #161440;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 10px 10px 0px #161440;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform:rotate(3deg) scale(110%) translate(-2px, -2px);
+  box-shadow: 18px 18px 0px #161440;
+  transition: 0.3s;
+}
+
+ul {
+  padding: 0px;
+}
+
+.list-inline {
+  text-decoration: none;
+  color:#FFFFFF;
+  display: inline-block;
+  font-size: 4em;
+  margin: 0px 30px;
+  transition: 0.3s;
+}
+
+.list-inline:hover {
+  text-decoration: none;
+  transform:translate(-2px, -2px) scale(140%) rotate(3deg);
+  transition: 0.3s;
+  color:#FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color:#FFFFFF;
+}
+
+
+
+.back_rotation {
+  animation: rotation 15s infinite linear;
+  display: flex;
+  position: absolute;
+  left: -114px;
+  top: 0px;
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
